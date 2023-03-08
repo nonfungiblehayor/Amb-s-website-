@@ -5,15 +5,22 @@ $bgColor: #D7DDEF;
 $textHeadingColor: #141F3F;
 $normalTextColor: #464E68;
 $otherTextColor: #E4E7ED;
+$btnHeight: 45px;
 
 @mixin buttonStyle {
   background-color: #141F3F;
   color: $otherTextColor;
+  font-family: $textFont;
 }
 
 @mixin rowdisplayStyle {
   display: flex;
   flex-direction: row;
+}
+
+@mixin coldisplayStyle {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -69,4 +76,50 @@ body {
       font-weight: 500;
     }
    }
+}
+.subHeaderSection {
+  @include rowdisplayStyle();
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  .subSection1 {
+    @include coldisplayStyle();
+    h2 {
+      width: 569px;
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 40px;
+      color: $textHeadingColor;
+      line-height: 48.76px;
+      margin-bottom: 5px;
+      span {
+        color: #1F409E;
+      }
+    }
+    p {
+      width: 569px;
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 24px;
+      color: $normalTextColor;
+      line-height: 29.26px;
+    }
+    .quoteBtn {
+      @include buttonStyle();
+      width: 281px;
+      height: $btnHeight;
+      border: none;
+      border-radius: 24px;
+      padding: 9px 24px 9px 24px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .subSection2 {
+    padding-top: 30px;
+    img {
+      width: 401px;
+      height: 480px;
+    }
+  }
 }
