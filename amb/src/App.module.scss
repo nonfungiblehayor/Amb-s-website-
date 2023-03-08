@@ -123,3 +123,42 @@ body {
     }
   }
 }
+.serviceSection {
+  @include coldisplayStyle();
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  h2 {
+    font-family: $textFont;
+    font-weight: 600;
+    font-size: 28px;
+    color: $textHeadingColor;      
+  }
+  .subSec1 {
+    @include rowdisplayStyle();
+    justify-content: space-around;
+    gap: 200px;
+    .subSecDiv1 {
+      @include coldisplayStyle();
+      align-items: center;
+      img {
+        width: 139px;
+        height: 175px;
+      }
+      p {
+        font-family: $textFont;
+        font-weight: 500;
+        font-size: 22px;
+        color: $textHeadingColor;
+      }
+      span {
+        font-family: $textFont;
+        font-weight: 400;
+        font-size: 16px;
+        color: $normalTextColor;
+        text-align: center;
+        width: 350px;
+      }
+    }
+  }
+}
