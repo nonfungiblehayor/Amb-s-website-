@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+$textFont: 'Montserrat', sans-serif;
+$bgColor: #D7DDEF;
+$textHeadingColor: #141F3F;
+$normalTextColor: #464E68;
+$otherTextColor: #E4E7ED;
+
+@mixin buttonStyle {
+  background-color: #141F3F;
+  color: $otherTextColor;
+}
+
+@mixin rowdisplayStyle {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  background-color: $bgColor;
+}
+
+.headerSection {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 65px;
+   .headerDiv1 {
+    @include rowdisplayStyle();
+    align-items: center;
+    gap: 7px;
+    img {
+      width: 49.46px;
+      height: 49.46px;
+    }
+    p {
+      color: $textHeadingColor;
+      font-family: $textFont;
+      font-size: 16px;
+      font-weight: 600;
+    }
+   }
+   .headerDiv2 {
+    @include rowdisplayStyle();
+    align-items: center;
+    gap: 30px;
+    a {
+      color: $normalTextColor;
+      font-size: 20px;
+      font-family: $textFont;
+      font-weight: 400;
+      text-decoration: none;
+    }
+   }
+   .headerDiv3 {
+    @include rowdisplayStyle();
+    align-items: center;
+    .contactBtn {
+      @include buttonStyle();
+      width: 160px;
+      height: 45px;
+      padding: 9px 24px 9px 24px;
+      text-align: center;
+      border: none;
+      border-radius: 24px;
+      color: $otherTextColor;
+      font-size: 20px;
+      font-weight: 500;
+    }
+   }
+}
