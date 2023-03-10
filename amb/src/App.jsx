@@ -3,6 +3,7 @@ import Subheader from './components/sub-header';
 import Service from './components/service';
 import Pricing from './components/pricing';
 import Request from './components/request';
+import About from './components/about'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Service />
       <Pricing />
       <Request />
+      <About />
     </div>
   );
 }

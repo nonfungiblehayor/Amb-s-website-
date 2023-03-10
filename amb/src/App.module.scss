@@ -6,6 +6,8 @@ $textHeadingColor: #141F3F;
 $normalTextColor: #464E68;
 $otherTextColor: #E4E7ED;
 $btnHeight: 45px;
+$marginTop: 100px;
+$paddingTop: 80px;
 
 @mixin buttonStyle {
   background-color: #141F3F;
@@ -463,5 +465,67 @@ body {
     padding: 21px 24px 21px 24px;
     @include coldisplayStyle();
     justify-content: center;
+  }
+}
+.aboutSection {
+  @include coldisplayStyle();
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: $marginTop;
+  .aboutDiv1 {
+    @include coldisplayStyle();
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 28px;
+      color: $textHeadingColor;
+    }
+    p {
+      width: 1040px;
+      font-family: $textFont;
+      font-size: 22px;
+      font-weight: 400;
+      color: $normalTextColor;
+    }
+  }
+  .founderDiv {
+    @include coldisplayStyle();
+    gap: 60px;
+    margin-top: $marginTop;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 28px;
+      color: $textHeadingColor;
+    }
+    .founderDetail {
+      @include rowdisplayStyle();
+      gap: 32px;
+      .founderTxt {
+        @include coldisplayStyle();
+        p {
+          width: 207px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 20px;
+          color: $textHeadingColor;
+          margin-bottom: -7px;
+        }
+        .founderInfo {
+          p {
+            width: 876px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.38px;
+            color: $normalTextColor;
+            span {
+              color: #1F409E;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
   }
 }
