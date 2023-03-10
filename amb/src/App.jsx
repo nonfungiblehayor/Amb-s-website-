@@ -5,6 +5,7 @@ import Pricing from './components/pricing';
 import Request from './components/request';
 import About from './components/about';
 import Newsletter from './components/newsletter';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Request />
       <About />
       <Newsletter />
+      <Footer />
     </div>
   );
 }

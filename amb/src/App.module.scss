@@ -593,3 +593,100 @@ body {
     }
   }
 }
+.footerSection {
+  @include rowdisplayStyle();
+  justify-content: center;
+  margin-top: $marginTop;
+  padding-bottom: 108px;
+  .footDiv {
+    background-color: #CDD4E9;
+    width: 1040px;
+    height: 289.46px;
+    border-radius: 72px;
+    @include rowdisplayStyle();
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 120px 60px 120px;
+    .footDiv1 {
+      @include coldisplayStyle();
+      width: 251.46px;
+      height: 169.46px;
+      background-color: #BBC7E9;
+      border-radius: 36px;
+      padding: 24px;
+      .logoDiv {
+        @include rowdisplayStyle();
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img {
+          width: 49.46px;
+          height: 49.46px;
+        }
+        p {
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 16px;
+          color: $textHeadingColor;
+        }
+      }   
+      p {
+        font-family: $textFont;
+          font-weight: 400;
+          font-size: 16px;
+          color: $normalTextColor;
+      }   
+    }
+    .footDiv2 {
+      @include coldisplayStyle();
+      gap: 25px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-top: -15px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $textFont;
+        color: $normalTextColor;
+      }
+    }
+    .footDiv3 {
+      @include coldisplayStyle();
+      gap: 3px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-top: -15px;
+      }
+      .eachLink {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
