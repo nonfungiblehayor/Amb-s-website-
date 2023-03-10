@@ -436,3 +436,32 @@ body {
     }
   }
 }
+.reqSection {
+  max-width: 100%;
+  background-image: linear-gradient(#5179EE 100%, #6782CD 100%, #557DF3 100%, #5F7FDC 100%);
+  @include rowdisplayStyle();
+  justify-content: space-around;
+  align-items: center;
+  height: 87px;
+  margin-top: 100px;
+  p {
+    font-family: $textFont;
+    font-size: 24px;
+    font-weight: 600;
+    color: $bgColor;
+  }
+  button {
+    background-color: #E4E7ED;
+    width: 239px;
+    height: $btnHeight;
+    border-radius: 24px;
+    border: none;
+    font-family: $textFont;
+    font-size: 22px;
+    font-weight: 500;
+    color: $textHeadingColor;
+    padding: 21px 24px 21px 24px;
+    @include coldisplayStyle();
+    justify-content: center;
+  }
+}
