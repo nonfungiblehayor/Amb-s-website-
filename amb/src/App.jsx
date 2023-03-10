@@ -1,7 +1,7 @@
-import style from './App.module.scss';
 import Header from './components/header';
 import Subheader from './components/sub-header';
 import Service from './components/service';
+import Pricing from './components/pricing';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Header />   
       <Subheader />  
       <Service />
+      <Pricing />
     </div>
   );
 }

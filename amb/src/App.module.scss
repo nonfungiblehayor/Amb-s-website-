@@ -162,3 +162,277 @@ body {
     }
   }
 }
+.pricingSection {
+  @include coldisplayStyle();
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  h2 {
+    font-family: $textFont;
+    font-weight: 600;
+    font-size: 28px;
+    color: $textHeadingColor;      
+  }
+  .pkgType {
+    @include rowdisplayStyle();
+    margin-top: 80px;
+    align-items: center;
+    .startUpdiv {
+      background-color: #CDD4E9;
+      width: 339px;
+      height: 394px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        // align-self: flex-start;
+        gap: 20px;
+        h4 {
+          width: 279px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 10px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: transparent;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+    .proDiv {
+      background-color: #BBC7E9;
+      width: 362px;
+      height: 579px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        gap: 20px;
+        h4 {
+          width: 302px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 22px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: #E4E7ED;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+    .regulardiv {
+      background-color: #CDD4E9;
+      width: 339px;
+      height: 468px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        // align-self: flex-start;
+        gap: 23px;
+        h4 {
+          width: 279px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 10px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: transparent;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+  }
+}
