@@ -3,7 +3,8 @@ import Subheader from './components/sub-header';
 import Service from './components/service';
 import Pricing from './components/pricing';
 import Request from './components/request';
-import About from './components/about'
+import About from './components/about';
+import Newsletter from './components/newsletter';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Pricing />
       <Request />
       <About />
+      <Newsletter />
     </div>
   );
 }

@@ -537,3 +537,59 @@ body {
     }
   }
 }
+.newsletterSection {
+  @include coldisplayStyle();
+  justify-content: center;
+  align-items: center;
+  margin-top: $marginTop;
+  .letterDiv {
+    width: 490px;
+    height: 162px;
+    border-radius: 48px;
+    @include coldisplayStyle();
+    background-color: #BBC7E9;
+    justify-content: center;
+    padding: 24px 48px 24px 48px;
+    span {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 16px;
+      color: $normalTextColor;
+      text-align: center;
+    }
+    p {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 20px;
+      color: $normalTextColor;
+      text-align: center;
+    }
+    .inputDiv {
+      @include rowdisplayStyle();
+      align-items: center;
+      input {
+        width: 394px;
+        height: 46px;
+        border-radius: 24px;
+        background-color: $bgColor;
+        border: none;
+        font-size: 20px;
+        font-family: $textFont;
+        font-weight: 400;
+        padding-left: 7px;
+        margin-right: -155px;
+      }
+      .subBtn {
+        width: 149px;
+        height: 38px;
+        border-radius: 24px;
+        background-color: #141F3F;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $textFont;
+        color: $bgColor;
+        border: none;
+      }
+    }
+  }
+}
