@@ -86,6 +86,7 @@ body {
   padding-top: 100px;
   .subSection1 {
     @include coldisplayStyle();
+    z-index: -1;
     h2 {
       width: 569px;
       font-family: $textFont;
@@ -119,6 +120,7 @@ body {
   }
   .subSection2 {
     padding-top: 30px;
+    z-index: -1;
     img {
       width: 401px;
       height: 480px;
@@ -134,12 +136,14 @@ body {
     font-family: $textFont;
     font-weight: 600;
     font-size: 28px;
-    color: $textHeadingColor;      
+    color: $textHeadingColor;  
+    z-index: -1;    
   }
   .subSec1 {
     @include rowdisplayStyle();
     justify-content: space-around;
     gap: 200px;
+    z-index: -1;
     .subSecDiv1 {
       @include coldisplayStyle();
       align-items: center;
@@ -685,6 +689,150 @@ body {
           font-size: 16px;
           color: $normalTextColor;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.quoteSection {
+  max-width: 100%;
+  @include coldisplayStyle();
+  align-items: center;
+  background-color: rgba(20, 31, 63, 0.5);
+  z-index: 1;
+  // margin-bottom: -305em;
+  padding-top: 433px;
+  height: 4878px;
+  overflow: hidden;
+  margin-bottom: -330em;
+  display: none;
+  .cancelDiv {
+    @include coldisplayStyle();
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  .formDiv {
+    @include coldisplayStyle();
+    justify-content: center;
+    align-items: center;
+    width: 932px;
+    height: 662px;
+    background-color: #BBC7E9;
+    border-radius: 60px;
+    padding: 60px;
+    gap: 31px;
+    .form {
+      @include coldisplayStyle();
+      gap: 31px;
+      .formInfo {
+        @include rowdisplayStyle();
+        width: 812px;
+        justify-content: space-evenly;
+        gap: 48px;
+        .eachInfo {
+          @include coldisplayStyle();
+          align-items: flex-start;
+          gap: 12px;
+          label {
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: $textHeadingColor;
+          }
+          input {
+            width: 382px;
+            height: $btnHeight;
+            border-radius: 24px;
+            border: none;
+            background-color: #D7DDEF;
+            font-size: 20px;
+            font-family: $textFont;
+            font-weight: 400;
+            padding-left: 10px;
+          }
+          input:focus {
+            outline: none;
+          }
+        }
+        select {
+          width: 382px;
+          height: $btnHeight;
+          border-radius: 24px;
+          border: none;
+          background-color: #D7DDEF;
+          font-size: 20px;
+          font-family: $textFont;
+          font-weight: 400;
+          padding-left: 10px;
+          option {
+            background-color: #D7DDEF;
+            width: 382px;
+            height: 318px;
+            padding-right: 40px;
+            border-radius: 22px;
+            font-size: 13px;
+            font-family: $textFont;
+            font-weight: 400;
+            position: absolute;
+          }
+        }
+        select:focus {
+          outline: none;
+        }
+        select::-webkit-scrollbar {
+          width: 6px;
+        }
+      select::-webkit-scrollbar-thumb {
+          background: #464E68; 
+          border-radius: 24px;
+        }
+      select::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #BBC7E9; 
+        border-radius: 24px;
+      }
+      }
+      .formInfo2 {
+        @include coldisplayStyle();
+        align-items: flex-start;
+        gap: 12px;
+        label {
+          font-family: $textFont;
+          font-size: 20px;
+          font-weight: 500;
+          color: $textHeadingColor;
+        }
+        textarea {
+          width: 812px;
+          height: 206px;
+          background-color: #D7DDEF;
+          border: none;
+          border-radius: 24px;
+          font-size: 20px;
+          font-family: $textFont;
+          font-weight: 400;
+          color: #ADB8D9;
+          padding-left: 15px;
+          padding-top: 10px;
+        }
+      }
+      .formInfo3 {
+        @include coldisplayStyle();
+        align-items: flex-end;
+        button {
+          @include buttonStyle();
+          border: none;
+          width: 123px;
+          height: $btnHeight;
+          border-radius: 24px;
+          padding: 10px 24px 10px 24px;
+          color: $bgColor;
+          font-weight: 500;
+          font-family: $textFont;
+          font-size: 20px;
         }
       }
     }

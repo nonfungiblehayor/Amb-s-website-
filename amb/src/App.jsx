@@ -6,10 +6,13 @@ import Request from './components/request';
 import About from './components/about';
 import Newsletter from './components/newsletter';
 import Footer from './components/footer';
+import Quote from './components/quote';
+import style from './App.module.scss';
 
 function App() {
-  return (
-    <div className="App">
+  return ( <>
+    <Quote />
+    <div className="App">      
       <Header />   
       <Subheader />  
       <Service />
@@ -19,6 +22,7 @@ function App() {
       <Newsletter />
       <Footer />
     </div>
+    </>
   );
 }
 
