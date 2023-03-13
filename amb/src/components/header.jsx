@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/Frame 130.webp';
 import style from '../App.module.scss';
 
-function Header() {
+function Header({showModal}) {
     return <header className={style.headerSection}>
         <div className={style.headerDiv1}>
             <img src={logo} alt='amb logo' className={style.logoImg}></img>
@@ -17,7 +17,7 @@ function Header() {
             <a href='/'>About</a>
         </nav>
         <div className={style.headerDiv3}>
-            <button className={style.contactBtn}>Contact Us</button>
+            <button className={style.contactBtn} onClick={showModal}>Contact Us</button>
         </div>
     </header>
 }

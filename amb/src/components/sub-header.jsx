@@ -2,7 +2,7 @@ import React from 'react';
 import style from '../App.module.scss';
 import Group133 from '../images/Group 133.webp';
 
-function Subheader() {
+function Subheader({showModal}) {
     return <section className={style.subHeaderSection}>
         <div className={style.subSection1}>
             <h2>

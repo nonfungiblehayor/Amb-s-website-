@@ -7,13 +7,19 @@ import About from './components/about';
 import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import Quote from './components/quote';
-import style from './App.module.scss';
+import { useState } from 'react';
 
 function App() {
+  const [modal, modalControl] = useState(false);
+
+  const  toggleModal = () => {
+    modalControl(!modal);
+    console.log('working')
+  }
   return ( <>
-    <Quote />
+  {modal ?  <Quote hideModal={toggleModal}/>  : console.log('werey')} 
     <div className="App">      
-      <Header />   
+      <Header showModal={toggleModal}/>   
       <Subheader />  
       <Service />
       <Pricing />

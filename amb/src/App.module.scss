@@ -697,15 +697,14 @@ body {
 .quoteSection {
   max-width: 100%;
   @include coldisplayStyle();
+  // display: none;
   align-items: center;
   background-color: rgba(20, 31, 63, 0.5);
-  z-index: 1;
-  // margin-bottom: -305em;
+  z-index: 2;
   padding-top: 433px;
   height: 4878px;
   overflow: hidden;
   margin-bottom: -330em;
-  display: none;
   .cancelDiv {
     @include coldisplayStyle();
     align-items: center;

@@ -4,10 +4,10 @@ import frame423 from '../images/Frame 423.svg';
 import Countries from './countries';
 import Quoteform from './quote-form';
 
-function Quote() {
+function Quote({hideModal}) {
     return <section className={style.quoteSection}>
         <div className={style.cancelDiv}>
-            <img src={frame423} alt='cancel logo'></img>
+            <img src={frame423} alt='cancel logo' onClick={hideModal}></img>
         </div>
         <div className={style.formDiv}>
             <form className={style.form}>
