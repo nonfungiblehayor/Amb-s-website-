@@ -17,16 +17,16 @@ function App() {
     console.log('working')
   }
   return ( <>
-  {modal ?  <Quote hideModal={toggleModal}/>  : console.log('werey')} 
+  {modal ?  <Quote hideModal={toggleModal}/>  : console.log('were')} 
     <div className="App">      
       <Header showModal={toggleModal}/>   
       <Subheader />  
-      <Service />
+       <Service />
       <Pricing />
-      <Request />
-      <About />
+     <Request />
+       <About />
       <Newsletter />
-      <Footer />
+     <Footer />
     </div>
     </>
   );

@@ -11,8 +11,8 @@ function Pricing() {
         </h2>
         <div className={style.pkgType}>
             <Startup />
-            <Pro />
-            <Regular />
+             <Pro />
+           <Regular />
         </div>
     </section>
 }
