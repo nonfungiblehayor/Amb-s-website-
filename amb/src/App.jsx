@@ -20,13 +20,13 @@ function App() {
   {modal ?  <Quote hideModal={toggleModal}/>  : console.log('were')} 
     <div className="App">      
       <Header showModal={toggleModal}/>   
-      <Subheader />  
-       <Service />
-      <Pricing />
+       <Subheader />  
+      <Service />
+       <Pricing />
      <Request />
        <About />
       <Newsletter />
-     <Footer />
+    <Footer />
     </div>
     </>
   );
