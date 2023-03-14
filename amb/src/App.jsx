@@ -16,15 +16,22 @@ function App() {
 
   const  toggleModal = () => {
     modalControl(!modal);
+    if(menu === true) {
+      toggleMenu()
+    }
   }
 
   const toggleMenu = () => {
     menuControl(!menu);
+    if(modal === true) {
+      toggleModal()
+    }
   }
   return ( <>
-  {modal ?  <Quote hideModal={toggleModal}/>  : ''} 
-    <div className="App">      
-      <Header showModal={toggleModal} showMenu={toggleMenu}/>    
+    <div className="App">   
+      <Header showModal={toggleModal} showMenu={toggleMenu}/>   
+  {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
+  {modal ?  <Quote hideModal={toggleModal}/>  : ''}      
        <Subheader />  
      <Service />
        <Pricing />
@@ -32,7 +39,6 @@ function App() {
        <About />
       <Newsletter />
    <Footer />
-   {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu}/> : ''}   
     </div>
     </>
   );

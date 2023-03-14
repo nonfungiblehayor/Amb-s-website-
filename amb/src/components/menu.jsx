@@ -2,7 +2,7 @@ import React from "react";
 import style from '../App.module.scss';
 import frame423 from '../images/Frame 423.svg';
 
-function Menu({showModal, hideMenu}) {
+function Menu({showModal, hideMenu,}) {
     return <section className={style.menuSection}>
         <div className={style.cancelDiv}>
             <img src={frame423}alt='cancel' onClick={hideMenu}></img>
