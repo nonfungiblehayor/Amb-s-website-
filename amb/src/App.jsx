@@ -7,6 +7,7 @@ import About from './components/about';
 import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 import Quote from './components/quote';
+import Menu from './components/menu';
 import { useState } from 'react';
 
 function App() {
@@ -20,13 +21,14 @@ function App() {
   {modal ?  <Quote hideModal={toggleModal}/>  : console.log('were')} 
     <div className="App">      
       <Header showModal={toggleModal}/>   
-       <Subheader />  
+      <Menu  showModal={toggleModal}/>
+       {/* <Subheader />  
       <Service />
        <Pricing />
      <Request />
        <About />
       <Newsletter />
-    <Footer />
+    <Footer /> */}
     </div>
     </>
   );
