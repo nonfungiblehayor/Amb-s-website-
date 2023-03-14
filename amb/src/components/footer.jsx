@@ -22,7 +22,7 @@ function Footer() {
                 Chattered accountants
                 </p>
             </div>
-            <div className={style.footDiv2}>
+             <div className={style.footDiv2}>
                 <h3>
                     Company
                 </h3>
@@ -30,11 +30,11 @@ function Footer() {
                 <a href="#service">Services</a>
                 <a href="#pricing">Pricing</a>
             </div>
-            <div className={style.footDiv3}>
+           <div className={style.footDiv3}>
                 <h3>
                     Contact
                 </h3>
-                <div className={style.eachLink}>
+                <div className={style.eachLink1}>
                     <img src={mail} alt='alt logo'></img>
                     <p>ambconsultants0@gmail.com</p>
                 </div>

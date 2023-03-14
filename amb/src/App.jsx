@@ -24,15 +24,15 @@ function App() {
   return ( <>
   {modal ?  <Quote hideModal={toggleModal}/>  : ''} 
     <div className="App">      
-      <Header showModal={toggleModal} showMenu={toggleMenu}/>   
-  {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu}/> : ''}    
-       {/* <Subheader />  
-      <Service />
+      <Header showModal={toggleModal} showMenu={toggleMenu}/>    
+       <Subheader />  
+     <Service />
        <Pricing />
-     <Request />
+      <Request />
        <About />
       <Newsletter />
-    <Footer /> */}
+   <Footer />
+   {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu}/> : ''}   
     </div>
     </>
   );

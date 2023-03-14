@@ -2561,9 +2561,11 @@ body {
   gap: 24px;
   background-color:  rgba(20, 31, 63, 0.5);
   max-width: 100%;
-  height: 7150px;
+  height: 100vh;
   overflow: hidden;
-  margin-top: -110px;
+  position: relative;
+  top: -530em;
+  // margin-top: -530em;
   padding-top: 100px;
   .cancelDiv {
     @include rowdisplayStyle();
@@ -2609,4 +2611,668 @@ body {
     }
   }
  }
+ .subHeaderSection {
+  @include coldisplayStyle();
+  align-items: center;
+  padding-top: 40px;
+  .subSection1 {
+    @include coldisplayStyle();
+    align-items: center;
+    gap: 20px;
+    h2 {
+      width: 550px;
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 45px;
+      color: $textHeadingColor;
+      line-height: 48.76px;
+      text-align: center;
+      span {
+        color: #1F409E;
+      }
+    }
+    p {
+      width: 550px;
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 26px;
+      color: $normalTextColor;
+      line-height: 29.26px;
+      text-align: center
+    }
+    .quoteBtn {
+      @include buttonStyle();
+      width: 270px;
+      height: $btnHeight;
+      border: none;
+      border-radius: 24px;
+      padding: 9px 24px 9px 24px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+  .subSection2 {
+    padding-top: 30px;
+    z-index: -1;
+    img {
+      width: 270px;
+      height: 350px;
+    }
+  }
+}
+.serviceSection {
+  @include coldisplayStyle();
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+  h2 {
+    font-family: $textFont;
+    font-weight: 600;
+    font-size: 26px;
+    color: $textHeadingColor;  
+    z-index: -1; 
+    text-align: center;
+    width: 480px;   
+  }
+  .subSec1 {
+    @include coldisplayStyle();
+    align-items: center;
+    gap: 80px;
+    z-index: -1;
+    .subSecDiv1 {
+      @include coldisplayStyle();
+      align-items: center;
+      img {
+        width: 239px;
+        height: 275px;
+      }
+      p {
+        font-family: $textFont;
+        font-weight: 500;
+        font-size: 20px;
+        color: $textHeadingColor;
+      }
+      span {
+        font-family: $textFont;
+        font-weight: 400;
+        font-size: 16px;
+        color: $normalTextColor;
+        text-align: center;
+        width: 350px;
+      }
+    }
+  }
+}
+.pricingSection {
+  @include coldisplayStyle();
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  h2 {
+    font-family: $textFont;
+    font-weight: 600;
+    font-size: 28px;
+    color: $textHeadingColor;      
+  }
+  .pkgType {
+    @include coldisplayStyle();
+    margin-top: 80px;
+    align-items: center;
+    gap: 40px;    
+    .startUpdiv {
+      background-color: #CDD4E9;
+      width: 339px;
+      height: 394px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        // align-self: flex-start;
+        gap: 20px;
+        h4 {
+          width: 279px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 10px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: transparent;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+    .proDiv {
+      background-color: #BBC7E9;
+      width: 362px;
+      height: 579px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        gap: 20px;
+        h4 {
+          width: 302px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 22px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: #E4E7ED;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+    .regulardiv {
+      background-color: #CDD4E9;
+      width: 339px;
+      height: 468px;
+      @include coldisplayStyle();
+      align-items: center;
+      border-radius: 25px;
+      padding: 0px 30px 24px 30px;
+      .upDiv {
+        background-color: #8CA0DA;
+        width: 165px;
+        height: $btnHeight;
+        padding: 10px 48px 10px 48px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        @include coldisplayStyle();
+        justify-content: center;
+        p {
+          color: #FFFFFF;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+        }
+      }
+      .priceDiv {
+        p {
+          color: $textHeadingColor;
+          font-size: 24px;
+          font-weight: 600;
+          font-family: $textFont;
+          span {
+          color: #A3ADC0;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: $textFont;
+          }
+        }
+      }
+      .pkg {
+        @include coldisplayStyle();
+        max-width: 100%;
+        // align-self: flex-start;
+        gap: 23px;
+        h4 {
+          width: 279px;
+          font-family: $textFont;
+          font-weight: 500;
+          font-size: 16px;
+          color: $textHeadingColor;
+          line-height: 19.5px;
+        }
+        .pkgList {
+          @include coldisplayStyle();
+          gap: 10px;          
+          .each {
+            @include rowdisplayStyle();
+            align-items: center;
+            gap: 10px;
+            label {
+            font-family: $textFont;
+            font-weight: 400;
+            font-size: 14px;
+            color: $normalTextColor;
+            }           
+          }
+        }
+        .contactDiv {
+          @include coldisplayStyle();
+          align-items: center;
+          justify-content: center;
+          .contactBtn {
+            background-color: transparent;
+            border: 1px solid #4D67B2;
+            border-radius: 24px;
+            width: 279px;
+            height: $btnHeight;
+            padding: 1px 24px 1px 24px;
+            font-family: $textFont;
+            font-size: 20px;
+            font-weight: 500;
+            color: #031949;
+          }
+        }
+      }
+    }
+  }
+}
+.reqSection {
+  max-width: 100%;
+  background-image: linear-gradient(#5179EE 100%, #6782CD 100%, #557DF3 100%, #5F7FDC 100%);
+  @include rowdisplayStyle();
+  justify-content: space-around;
+  align-items: center;
+  height: 67px;
+  margin-top: 100px;
+  p {
+    font-family: $textFont;
+    font-size: 12px;
+    font-weight: 600;
+    color: $bgColor;
+  }
+  button {
+    background-color: #E4E7ED;
+    width: 170px;
+    height: 35px;
+    border-radius: 24px;
+    border: none;
+    font-family: $textFont;
+    font-size: 12px;
+    font-weight: 500;
+    color: $textHeadingColor;
+    padding: 21px 15px 21px 15px;
+    @include coldisplayStyle();
+    justify-content: center;
+    align-items: center;
+  }
+}
+.aboutSection {
+  @include coldisplayStyle();
+  align-items: center;
+  margin-top: 70px;
+  .aboutDiv1 {
+    @include coldisplayStyle();
+    align-items: center;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 24px;
+      color: $textHeadingColor;
+    }
+    p {
+      width: 500px;
+      font-family: $textFont;
+      font-size: 16px;
+      font-weight: 400;
+      color: $normalTextColor;
+      text-align: center
+    }
+  }
+  .founderDiv {
+    @include coldisplayStyle();
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 22px;
+      color: $textHeadingColor;
+    }
+    .founderDetail {
+      @include coldisplayStyle();
+      align-items: center;
+      gap: 18px;
+      .imgDiv {
+        @include rowdisplayStyle();
+        img {
+          width: 60px;
+          height: 60px
+        }
+      }
+      .founderTxt {
+        @include coldisplayStyle();
+        align-items: center;
+        p {
+          width: 207px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 20px;
+          color: $textHeadingColor;
+          margin-bottom: -7px;
+          text-align: center;
+        }
+        .ramzy {
+          width: 232px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 20px;
+          color: $textHeadingColor;
+          margin-bottom: -7px;
+        }
+        .founderInfo {
+          @include coldisplayStyle();
+          align-items: center;
+          p {
+            width: 450px;
+            font-family: $textFont;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24.38px;
+            color: $normalTextColor;
+            span {
+              color: #1F409E;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newsletterSection {
+  @include coldisplayStyle();
+  justify-content: center;
+  align-items: center;
+  margin-top: $marginTop;
+  .letterDiv {
+    width: 400px;
+    height: 162px;
+    border-radius: 48px;
+    @include coldisplayStyle();
+    background-color: #BBC7E9;
+    justify-content: center;
+    padding: 24px 48px 24px 48px;
+    align-items: center;
+    span {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 16px;
+      color: $normalTextColor;
+      text-align: center;
+    }
+    p {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 20px;
+      color: $normalTextColor;
+      text-align: center;
+    }
+    .inputDiv {
+      @include rowdisplayStyle();
+      align-items: center;
+      input {
+        width: 394px;
+        height: 46px;
+        border-radius: 24px;
+        background-color: $bgColor;
+        border: none;
+        font-size: 20px;
+        font-family: $textFont;
+        font-weight: 400;
+        padding-left: 7px;
+        margin-right: -155px;
+      }
+      .subBtn {
+        width: 149px;
+        height: 38px;
+        border-radius: 24px;
+        background-color: #141F3F;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $textFont;
+        color: $bgColor;
+        border: none;
+      }
+    }
+  }
+}
+.footerSection {
+  @include coldisplayStyle();
+  align-items: center;
+  margin-top: $marginTop;
+  padding-bottom: 108px;
+  .footDiv {
+    background-color: #CDD4E9;
+    width: 400px;
+    height: 560.46px;
+    border-radius: 32px;
+    @include coldisplayStyle();
+    align-items: flex-start;
+    padding-left: 25px;
+    gap: 40px;
+    .footDiv1 {
+      @include coldisplayStyle();
+      width: 280px;
+      height: 139.46px;
+      background-color: #BBC7E9;
+      border-radius: 36px;
+      padding: 20px;
+      .logoDiv {
+        @include rowdisplayStyle();
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img {
+          width: 20.46px;
+          height: 20.46px;
+        }
+        p {
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 12px;
+          color: $textHeadingColor;
+        }
+      }   
+      p {
+        font-family: $textFont;
+          font-weight: 400;
+          font-size: 12px;
+          color: $normalTextColor;
+      }   
+    }
+    .footDiv2 {
+      @include coldisplayStyle();
+      align-items: flex-start;
+      padding-left: 30px;
+      gap: 0;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $textFont;
+        color: $normalTextColor;
+        margin-bottom: 12px;
+      }
+    }
+    .footDiv3 {
+      @include coldisplayStyle();
+      gap: 10px;
+      align-items: flex-start;
+      padding-left: 25px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-bottom: 5px;
+      }
+      .eachLink1 {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        margin-bottom: -10px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+      .eachLink {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 }
