@@ -13,7 +13,7 @@ function Subheader({showModal}) {
             other technical financial matters easier to understand and manage
             </p>
             <button className={style.quoteBtn}>
-            Request A quote
+            Contact us
             </button>
         </div>
         <div className={style.subSection2}>

@@ -30,16 +30,16 @@ function App() {
   return ( <>
     <div className="App">   
       <Header showModal={toggleModal} showMenu={toggleMenu}/>   
-  {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
+   {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
   {modal ?  <Quote hideModal={toggleModal}/>  : ''}      
        <Subheader />  
      <Service />
        <Pricing />
-      <Request />
+   {/*   <Request />
        <About />
       <Newsletter />
-   <Footer />
-    </div>
+   <Footer />*/}
+    </div> 
     </>
   );
 }
