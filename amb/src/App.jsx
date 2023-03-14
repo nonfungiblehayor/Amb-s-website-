@@ -35,8 +35,8 @@ function App() {
        <Subheader />  
      <Service />
        <Pricing />
-   {/*   <Request />
-       <About />
+      <Request />
+   {/*    <About />
       <Newsletter />
    <Footer />*/}
     </div> 

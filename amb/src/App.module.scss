@@ -477,6 +477,9 @@ body {
     justify-content: center;
   }
 }
+.reqSection2 {
+  display: none;
+}
 .aboutSection {
   @include coldisplayStyle();
   padding-left: 120px;
@@ -1289,6 +1292,9 @@ body {
     @include coldisplayStyle();
     justify-content: center;
   }
+}
+.reqSection2 {
+  display: none;
 }
 .aboutSection {
   @include coldisplayStyle();
@@ -2113,6 +2119,9 @@ body {
     justify-content: center;
     align-items: center;
   }
+}
+.reqSection2 {
+  display: none;
 }
 .aboutSection {
   @include coldisplayStyle();
@@ -3010,6 +3019,9 @@ body {
     align-items: center;
   }
 }
+.reqSection2 {
+  display: none;
+}
 .aboutSection {
   @include coldisplayStyle();
   align-items: center;
@@ -3831,8 +3843,8 @@ body {
     }
     .regulardiv {
       background-color: #CDD4E9;
-      width: 280px;
-      height: 468px;
+      width: 17em;
+      height: 28em;
       @include coldisplayStyle();
       align-items: center;
       border-radius: 25px;
@@ -3918,6 +3930,57 @@ body {
           }
         }
       }
+    }
+  }
+}
+.reqSection {
+  display: none;
+}
+.reqSection2 {
+  @include coldisplayStyle();
+  align-items: center;
+  div {
+    width: 329px;
+    background-color: #5179EE;
+    border-radius: 36px;
+    @include coldisplayStyle();
+    justify-self: center;
+    height: 180px;
+    margin-top: 100px;
+    align-items: center;
+  padding-top: 24px;
+    p {
+      font-family: $textFont;
+      font-size: 16px;
+      font-weight: 600;
+      color: #17203B;
+      width: 218px;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    span {
+      font-family: $textFont;
+      font-size: 16px;
+      font-weight: 600;
+      color: #17203B;
+      width: 218px;
+      text-align: center;
+    }
+    button {
+      background-color: #E4E7ED;
+      width: 281px;
+      height: 42px;
+      border-radius: 24px;
+      border: none;
+      font-family: $textFont;
+      font-size: 14px;
+      font-weight: 500;
+      color: $textHeadingColor;
+      padding: 21px 15px 21px 15px;
+      @include coldisplayStyle();
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
     }
   }
 }
