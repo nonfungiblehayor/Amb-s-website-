@@ -12,16 +12,20 @@ import { useState } from 'react';
 
 function App() {
   const [modal, modalControl] = useState(false);
+  const [menu, menuControl] = useState(false);
 
   const  toggleModal = () => {
     modalControl(!modal);
-    console.log('working')
+  }
+
+  const toggleMenu = () => {
+    menuControl(!menu);
   }
   return ( <>
-  {modal ?  <Quote hideModal={toggleModal}/>  : console.log('were')} 
+  {modal ?  <Quote hideModal={toggleModal}/>  : ''} 
     <div className="App">      
-      <Header showModal={toggleModal}/>   
-      <Menu  showModal={toggleModal}/>
+      <Header showModal={toggleModal} showMenu={toggleMenu}/>   
+  {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu}/> : ''}    
        {/* <Subheader />  
       <Service />
        <Pricing />
