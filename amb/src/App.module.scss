@@ -4287,8 +4287,9 @@ body {
     height: 723px;
     background-color: #BBC7E9;
     border-radius: 36px;
-    padding: 36px 28px 28px 36px;
+    padding: 26px 28px 28px 36px;
     gap: 25px;
+    margin-bottom: 50vh;
     .form {
       @include coldisplayStyle();
       align-items: center;
