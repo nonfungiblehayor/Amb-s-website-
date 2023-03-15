@@ -17,8 +17,16 @@ function App() {
 
   const  toggleModal = () => {
     modalControl(!modal);
+    document.body.style.overflow = 'hidden'; 
     if(menu === true) {
       toggleMenu()
+    }
+  }
+
+  const toggleModal2 = () => {
+    if(modal === true) {
+      modalControl(!modal);
+      document.body.style.overflow = 'scroll';
     }
   }
 
@@ -32,7 +40,7 @@ function App() {
     <div className={style.App}>   
       <Header showModal={toggleModal} showMenu={toggleMenu}/>   
    {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
-  {modal ?  <Quote hideModal={toggleModal}/>  : ''}      
+  {modal ?  <Quote hideModal={toggleModal2}/>  : ''}      
        <Subheader />  
      <Service />
        <Pricing />
