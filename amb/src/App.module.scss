@@ -28,9 +28,6 @@ $paddingTop: 80px;
 body {
   background-color: $bgColor;
 }
-// .body2 {
-//   background-color: $bgColor;
-// }
 
 .headerSection {
    display: flex;
@@ -4281,7 +4278,6 @@ body {
   align-items: center;
   background-color: rgba(20, 31, 63, 0.5);
   z-index: 1;
-  padding-top: -140px;
   height: 100%;
   overflow-y: scroll;
   position: fixed;
@@ -4290,10 +4286,12 @@ body {
   bottom: 0;
   left: 0;
   gap: 10px;
+  padding-top: 433px;
   .cancelDiv {
     @include coldisplayStyle();
     align-items: center;
     justify-content: center;
+    margin-top: -80px;
     img {
       width: 42px;
       height: 42px;
@@ -4309,7 +4307,7 @@ body {
     border-radius: 36px;
     padding: 26px 28px 28px 36px;
     gap: 25px;
-    margin-bottom: 50vh;
+    margin-bottom: 90vh;
     .form {
       @include coldisplayStyle();
       align-items: center;
