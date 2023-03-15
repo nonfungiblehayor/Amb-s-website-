@@ -4261,10 +4261,11 @@ body {
   align-items: center;
   background-color: rgba(20, 31, 63, 0.5);
   z-index: 1;
-  padding-top: 140px;
+  padding-top: -140px;
   height: 100%;
-  overflow: hidden;
-  margin-bottom: -320em;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
   gap: 10px;
   .cancelDiv {
     @include coldisplayStyle();
