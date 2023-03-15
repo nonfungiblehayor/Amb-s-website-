@@ -9,6 +9,7 @@ import Footer from './components/footer';
 import Quote from './components/quote';
 import Menu from './components/menu';
 import { useState } from 'react';
+import style from './App.module.scss';
 
 function App() {
   const [modal, modalControl] = useState(false);
@@ -28,7 +29,7 @@ function App() {
     }
   }
   return ( <>
-    <div className="App">   
+    <div className={style.App}>   
       <Header showModal={toggleModal} showMenu={toggleMenu}/>   
    {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
   {modal ?  <Quote hideModal={toggleModal}/>  : ''}      
@@ -36,9 +37,9 @@ function App() {
      <Service />
        <Pricing />
       <Request />
-   {/*    <About />
+       <About />
       <Newsletter />
-   <Footer />*/}
+  <Footer />
     </div> 
     </>
   );

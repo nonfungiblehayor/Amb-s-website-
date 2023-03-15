@@ -3984,4 +3984,421 @@ body {
     }
   }
 }
+.aboutSection {
+  @include coldisplayStyle();
+  align-items: center;
+  margin-top: 70px;
+  .aboutDiv1 {
+    @include coldisplayStyle();
+    align-items: center;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 20px;
+      color: $textHeadingColor;
+    }
+    p {
+      width: 331px;
+      font-family: $textFont;
+      font-size: 14px;
+      font-weight: 400;
+      color: $normalTextColor;
+      text-align: center
+    }
+  }
+  .founderDiv {
+    @include coldisplayStyle();
+    gap: 40px;
+    margin-top: 40px;
+    align-items: center;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 20px;
+      color: $textHeadingColor;
+    }
+    .founderDetail {
+      @include coldisplayStyle();
+      align-items: center;
+      gap: 32px;
+      .imgDiv {
+        @include rowdisplayStyle();
+        align-items: center;
+        img {
+          width: 100px;
+          height: 100px
+        }
+      }
+      .founderTxt {
+        @include coldisplayStyle();
+        align-items: center;
+        gap: 16px;
+        p {
+          width: 165px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 16px;
+          color: $textHeadingColor;
+          text-align: center;
+        }
+        .ramzy {
+          width: 200px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 16px;
+          color: $textHeadingColor;
+        }
+        .founderInfo {
+          @include coldisplayStyle();
+          align-items: center;
+          p {
+            width: 329px;
+            font-family: $textFont;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+            color: $normalTextColor;
+            span {
+              color: #1F409E;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.newsletterSection {
+  @include coldisplayStyle();
+  justify-content: center;
+  align-items: center;
+  margin-top: $marginTop;
+  .letterDiv {
+    width: 18.75em;
+    height: 12.75em;
+    border-radius: 2.25em;
+    @include coldisplayStyle();
+    background-color: #BBC7E9;
+    justify-content: center;
+    padding: 1.5em;
+    align-items: center;
+    span {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 0.625em;
+      color: $normalTextColor;
+      text-align: center;
+    }
+    p {
+      font-family: $textFont;
+      font-weight: 400;
+      font-size: 0.625em;
+      color: $normalTextColor;
+      text-align: center;
+      margin-top: 0.5em;
+    }
+    .inputDiv {
+     display: grid;
+     grid-template-columns: auto;
+     justify-content: center;
+     gap: 0.75em;
+     margin-top: 1.5em;
+      input {
+        width: 17.563em;
+        height: 2.5em;
+        border-radius: 1.5em;
+        background-color: $bgColor;
+        border: none;
+        font-size: 0.875em;
+        font-family: $textFont;
+        font-weight: 400;
+      }
+      .subBtn {
+        width: 17.863em;
+        height: 2.625em;
+        border-radius: 24px;
+        padding: 0.438em 1.8em 0.438em 1.5em;
+        background-color: #141F3F;
+        font-size: 0.875em;
+        font-weight: 500;
+        font-family: $textFont;
+        color: $bgColor;
+        border: none;
+      }
+    }
+  }
+}
+.footerSection {
+  @include coldisplayStyle();
+  align-items: center;
+  margin-top: $marginTop;
+  .footDiv {
+    background-color: #CDD4E9;
+    max-width: 18.75em;
+    height: 39.091em;
+    border-radius: 32px;
+    @include coldisplayStyle();
+    align-items: flex-start;
+    padding: 24px 24px 40px 24px;
+    gap: 50px;
+    .footDiv1 {
+      @include coldisplayStyle();
+      align-items: flex-start;
+      width: 271px;
+      height: 169.4px;
+      background-color: #BBC7E9;
+      border-radius: 36px;
+      padding: 18px;
+      .logoDiv {
+        @include rowdisplayStyle();
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img {
+          width: 49.46px;
+          height: 49.46px;
+        }
+        p {
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 16px;
+          color: $textHeadingColor;
+        }
+      }   
+      p {
+        font-family: $textFont;
+          font-weight: 400;
+          font-size: 16px;
+          color: $normalTextColor;
+          margin-bottom: 12px;
+      }   
+    }
+    .footDiv2 {
+      @include coldisplayStyle();
+      align-items: flex-start;
+      padding-left: 5px;
+      gap: 0;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $textFont;
+        color: $normalTextColor;
+        margin-bottom: 24px;
+      }
+    }
+    .footDiv3 {
+      @include coldisplayStyle();
+      gap: 10px;
+      align-items: flex-start;
+      padding-left: 5px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+        margin-bottom: 5px;
+      }
+      .eachLink1 {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        margin-bottom: -10px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+      .eachLink {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.quoteSection {
+  width: 100%;
+  @include coldisplayStyle();
+  align-items: center;
+  background-color: rgba(20, 31, 63, 0.5);
+  z-index: 1;
+  padding-top: 140px;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: -320em;
+  gap: 10px;
+  .cancelDiv {
+    @include coldisplayStyle();
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 42px;
+      height: 42px;
+    }
+  }
+  .formDiv {
+    @include coldisplayStyle();
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 723px;
+    background-color: #BBC7E9;
+    border-radius: 36px;
+    padding: 36px 28px 28px 36px;
+    gap: 25px;
+    .form {
+      @include coldisplayStyle();
+      align-items: center;
+      gap: 15px;
+      padding-top: 40px;
+      .formInfo {
+        @include coldisplayStyle();
+        align-items: center;
+        gap: 24px;
+        .eachInfo {
+          @include coldisplayStyle();
+          align-items: flex-start;
+          gap: 8px;
+          label {
+            font-family: $textFont;
+            font-size: 14px;
+            font-weight: 500;
+            color: $textHeadingColor;
+          }
+          input {
+            width: 275px;
+            height: 40px;
+            border-radius: 24px;
+            border: none;
+            background-color: #D7DDEF;
+            font-size: 14px;
+            font-family: $textFont;
+            font-weight: 400;
+            padding-left: 10px;
+          }
+          input:focus {
+            outline: none;
+          }
+        }
+        select {
+          width: 275px;
+          height: 40px;
+          border-radius: 24px;
+          border: none;
+          background-color: #D7DDEF;
+          font-size: 14px;
+          font-family: $textFont;
+          font-weight: 400;
+          padding-left: 10px;
+          option {
+            background-color: #D7DDEF;
+            width: 382px;
+            height: 318px;
+            padding-right: 40px;
+            border-radius: 22px;
+            font-size: 13px;
+            font-family: $textFont;
+            font-weight: 400;
+            position: absolute;
+          }
+        }
+        select:focus {
+          outline: none;
+        }
+        select::-webkit-scrollbar {
+          width: 6px;
+        }
+      select::-webkit-scrollbar-thumb {
+          background: #464E68; 
+          border-radius: 24px;
+        }
+      select::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #BBC7E9; 
+        border-radius: 24px;
+      }
+      }
+      .formInfo2 {
+        @include coldisplayStyle();
+        align-items: flex-start;
+        gap: 12px;
+        margin-top: 24px;
+        label {
+          font-family: $textFont;
+          font-size: 14px;
+          font-weight: 500;
+          color: $textHeadingColor;
+        }
+        textarea {
+          width: 275px;
+          height: 206px;
+          background-color: #D7DDEF;
+          border: none;
+          border-radius: 24px;
+          font-size: 14px;
+          font-family: $textFont;
+          font-weight: 400;
+          color: #ADB8D9;
+          padding-left: 15px;
+          padding-top: 10px;
+        }
+      }
+      .formInfo3 {
+        @include coldisplayStyle();
+       position: relative;
+       right: -80px;
+        button {
+          @include buttonStyle();
+          border: none;
+          width: 123px;
+          height: $btnHeight;
+          border-radius: 24px;
+          padding: 10px 24px 10px 24px;
+          color: $bgColor;
+          font-weight: 500;
+          font-family: $textFont;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
 }

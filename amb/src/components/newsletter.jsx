@@ -11,7 +11,7 @@ function Newsletter() {
             Subscribe to our newsletter
             </p>
             <div className={style.inputDiv}>
-                <input type='email' placeholder="Email"></input>
+                <input type='email' placeholder="Your Email"></input>
                 <button className={style.subBtn}>
                 Subscribe
                 </button>
