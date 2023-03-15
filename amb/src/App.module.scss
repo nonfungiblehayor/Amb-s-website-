@@ -4280,6 +4280,7 @@ body {
   z-index: 1;
   height: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   right: 0;
@@ -4308,7 +4309,6 @@ body {
     padding: 26px 28px 28px 36px;
     gap: 25px;
     margin-bottom: 90vh;
-    overflow-x: hidden;
     .form {
       @include coldisplayStyle();
       align-items: center;
