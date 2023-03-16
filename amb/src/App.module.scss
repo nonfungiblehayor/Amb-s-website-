@@ -765,43 +765,70 @@ body {
           input:focus {
             outline: none;
           }
-        }
-        select {
-          width: 382px;
-          height: $btnHeight;
-          border-radius: 24px;
-          border: none;
-          background-color: #D7DDEF;
-          font-size: 20px;
-          font-family: $textFont;
-          font-weight: 400;
-          padding-left: 10px;
-          option {
-            background-color: #D7DDEF;
+          .selectedOption {
+            @include rowdisplayStyle();
+            align-items: center;
+            img {
+              width: 24px;
+              height: 14px;
+              margin-left: -40px;
+            }
+            input {
+              width: 382px;
+              height: $btnHeight;
+              border-radius: 24px;
+              border: none;
+              background-color: #D7DDEF;
+              font-size: 20px;
+              font-family: $textFont;
+              font-weight: 400;
+              padding-left: 10px;
+            }
+            input:focus {
+              outline: none;
+            }
+          }
+          .options {
             width: 382px;
             height: 318px;
-            padding-right: 40px;
+            background-color: $bgColor;
+            @include coldisplayStyle();
+            align-items: flex-start;
             border-radius: 22px;
-            font-size: 13px;
-            font-family: $textFont;
-            font-weight: 400;
-            position: absolute;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: -15em;
+            z-index: 1;
+            .realOption {
+              background-color: transparent;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              width: 360px;
+            }
+            option {
+              font-size: 20px;
+              font-weight: 400;
+              font-family: $textFont;
+              color: $textHeadingColor;
+            }
           }
-        }
-        select:focus {
-          outline: none;
-        }
-        select::-webkit-scrollbar {
-          width: 6px;
-        }
-      select::-webkit-scrollbar-thumb {
-          background: #464E68; 
+          select:focus {
+            outline: none;
+          }
+          .realOption::-webkit-scrollbar {
+            width: 6px;
+            height: 25em;
+          }
+          .realOption::-webkit-scrollbar-thumb {
+            background: #464E68; 
+            border-radius: 24px;
+          }
+          .realOption::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #BBC7E9; 
           border-radius: 24px;
         }
-      select::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #BBC7E9; 
-        border-radius: 24px;
-      }
+        }
       }
       .formInfo2 {
         @include coldisplayStyle();

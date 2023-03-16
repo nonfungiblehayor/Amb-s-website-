@@ -7,7 +7,7 @@ import SubmitMsg from './submit-message';
 
 function Quote({hideModal}) {
     return <section className={style.quoteSection}>
-        {/* <div className={style.cancelDiv}>
+        <div className={style.cancelDiv}>
             <img src={frame423} alt='cancel logo' onClick={hideModal}></img>
         </div>
         <div className={style.formDiv}>
@@ -28,8 +28,8 @@ function Quote({hideModal}) {
                     <button type='submit' className={style.btn}>submit</button>
                 </div>
             </form>
-        </div> */}
-        <SubmitMsg />
+        </div>
+        {/* <SubmitMsg /> */}
     </section>
 }
 export default Quote
