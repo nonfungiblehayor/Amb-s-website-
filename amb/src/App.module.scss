@@ -1680,43 +1680,70 @@ body {
           input:focus {
             outline: none;
           }
-        }
-        select {
-          width: 350px;
-          height: $btnHeight;
-          border-radius: 24px;
-          border: none;
-          background-color: #D7DDEF;
-          font-size: 20px;
-          font-family: $textFont;
-          font-weight: 400;
-          padding-left: 10px;
-          option {
-            background-color: #D7DDEF;
-            width: 382px;
-            height: 318px;
-            padding-right: 40px;
-            border-radius: 22px;
-            font-size: 13px;
-            font-family: $textFont;
-            font-weight: 400;
-            position: absolute;
+          .selectedOption {
+            @include rowdisplayStyle();
+            align-items: center;
+            img {
+              width: 24px;
+              height: 14px;
+              margin-left: -40px;
+            }
+            input {
+              width: 350px;
+              height: $btnHeight;
+              border-radius: 24px;
+              border: none;
+              background-color: #D7DDEF;
+              font-size: 20px;
+              font-family: $textFont;
+              font-weight: 400;
+              padding-left: 10px;
+            }
+            input:focus {
+              outline: none;
+            }
           }
-        }
-        select:focus {
-          outline: none;
-        }
-        select::-webkit-scrollbar {
-          width: 6px;
-        }
-      select::-webkit-scrollbar-thumb {
-          background: #464E68; 
+          .options {
+            width: 352px;
+            height: 285px;
+            background-color: $bgColor;
+            @include coldisplayStyle();
+            align-items: flex-start;
+            border-radius: 22px;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: -25em;
+            z-index: 1;
+            .realOption {
+              background-color: transparent;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              width: 330px;
+            }
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              font-family: $textFont;
+              color: $textHeadingColor;
+              text-decoration: none;
+              margin-bottom: -3px;
+              cursor: pointer;
+            }
+          }
+          .realOption::-webkit-scrollbar {
+            width: 6px;
+            height: 25em;
+          }
+          .realOption::-webkit-scrollbar-thumb {
+            background: #464E68; 
+            border-radius: 24px;
+          }
+          .realOption::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #BBC7E9; 
           border-radius: 24px;
-        }
-      select::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #BBC7E9; 
-        border-radius: 24px;
-      }
+        }   
+        }    
       }
       .formInfo2 {
         @include coldisplayStyle();
@@ -2393,13 +2420,14 @@ body {
     }
     .footDiv2 {
       @include coldisplayStyle();
-      gap: 25px;
+      gap: 24px;
       h3 {
         font-size: 20px;
         font-weight: 700;
         font-family: $textFont;
         color: $textHeadingColor;
-        margin-top: -15px;
+        margin-top: -8px;
+        margin-bottom: 18px;
       }
       a {
         text-decoration: none;
@@ -2423,6 +2451,29 @@ body {
         @include rowdisplayStyle();
         gap: 8px;
         align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+      .eachLink1 {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        margin-bottom: -15px;
         img {
           width: 20px;
           height: 20px;
@@ -2512,43 +2563,70 @@ body {
           input:focus {
             outline: none;
           }
-        }
-        select {
-          width: 290px;
-          height: $btnHeight;
-          border-radius: 24px;
-          border: none;
-          background-color: #D7DDEF;
-          font-size: 20px;
-          font-family: $textFont;
-          font-weight: 400;
-          padding-left: 10px;
-          option {
-            background-color: #D7DDEF;
-            width: 382px;
-            height: 318px;
-            padding-right: 40px;
-            border-radius: 22px;
-            font-size: 13px;
-            font-family: $textFont;
-            font-weight: 400;
-            position: absolute;
+          .selectedOption {
+            @include rowdisplayStyle();
+            align-items: center;
+            img {
+              width: 24px;
+              height: 14px;
+              margin-left: -40px;
+            }
+            input {
+              width: 290px;
+              height: $btnHeight;
+              border-radius: 24px;
+              border: none;
+              background-color: #D7DDEF;
+              font-size: 20px;
+              font-family: $textFont;
+              font-weight: 400;
+              padding-left: 10px;
+            }
+            input:focus {
+              outline: none;
+            }
           }
-        }
-        select:focus {
-          outline: none;
-        }
-        select::-webkit-scrollbar {
-          width: 6px;
-        }
-      select::-webkit-scrollbar-thumb {
-          background: #464E68; 
+          .options {
+            width: 290px;
+            height: 290px;
+            background-color: $bgColor;
+            @include coldisplayStyle();
+            align-items: flex-start;
+            border-radius: 22px;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: -25em;
+            z-index: 1;
+            .realOption {
+              background-color: transparent;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              width: 270px;
+            }
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              font-family: $textFont;
+              color: $textHeadingColor;
+              text-decoration: none;
+              margin-bottom: -3px;
+              cursor: pointer;
+            }
+          }
+          .realOption::-webkit-scrollbar {
+            width: 6px;
+            height: 25em;
+          }
+          .realOption::-webkit-scrollbar-thumb {
+            background: #464E68; 
+            border-radius: 24px;
+          }
+          .realOption::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #BBC7E9; 
           border-radius: 24px;
+        }   
         }
-      select::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #BBC7E9; 
-        border-radius: 24px;
-      }
       }
       .formInfo2 {
         @include coldisplayStyle();
@@ -2561,7 +2639,7 @@ body {
           color: $textHeadingColor;
         }
         textarea {
-          width: 600px;
+          width: 620px;
           height: 206px;
           background-color: #D7DDEF;
           border: none;
@@ -3453,43 +3531,70 @@ body {
           input:focus {
             outline: none;
           }
-        }
-        select {
-          width: 450px;
-          height: 40px;
-          border-radius: 18px;
-          border: none;
-          background-color: #D7DDEF;
-          font-size: 16px;
-          font-family: $textFont;
-          font-weight: 400;
-          padding-left: 10px;
-          option {
-            background-color: #D7DDEF;
-            width: 382px;
-            height: 318px;
-            padding-right: 40px;
-            border-radius: 22px;
-            font-size: 13px;
-            font-family: $textFont;
-            font-weight: 400;
-            position: absolute;
+          .selectedOption {
+            @include rowdisplayStyle();
+            align-items: center;
+            img {
+              width: 24px;
+              height: 14px;
+              margin-left: -40px;
+            }
+            input {
+              width: 450px;
+              height: 40px;
+              border-radius: 24px;
+              border: none;
+              background-color: #D7DDEF;
+              font-size: 20px;
+              font-family: $textFont;
+              font-weight: 400;
+              padding-left: 10px;
+            }
+            input:focus {
+              outline: none;
+            }
           }
-        }
-        select:focus {
-          outline: none;
-        }
-        select::-webkit-scrollbar {
-          width: 6px;
-        }
-      select::-webkit-scrollbar-thumb {
-          background: #464E68; 
+          .options {
+            width: 450px;
+            height: 170px;
+            background-color: $bgColor;
+            @include coldisplayStyle();
+            align-items: flex-start;
+            border-radius: 22px;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: -12.85em;
+            z-index: 1;
+            .realOption {
+              background-color: transparent;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              width: 430px;
+            }
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              font-family: $textFont;
+              color: $textHeadingColor;
+              text-decoration: none;
+              margin-bottom: -3px;
+              cursor: pointer;
+            }
+          }
+          .realOption::-webkit-scrollbar {
+            width: 6px;
+            height: 25em;
+          }
+          .realOption::-webkit-scrollbar-thumb {
+            background: #464E68; 
+            border-radius: 24px;
+          }
+          .realOption::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #BBC7E9; 
           border-radius: 24px;
+        }   
         }
-      select::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #BBC7E9; 
-        border-radius: 24px;
-      }
       }
       .formInfo2 {
         @include coldisplayStyle();
@@ -4426,43 +4531,70 @@ body {
           input:focus {
             outline: none;
           }
-        }
-        select {
-          width: 275px;
-          height: 40px;
-          border-radius: 24px;
-          border: none;
-          background-color: #D7DDEF;
-          font-size: 14px;
-          font-family: $textFont;
-          font-weight: 400;
-          padding-left: 10px;
-          option {
-            background-color: #D7DDEF;
-            width: 382px;
-            height: 318px;
-            padding-right: 40px;
-            border-radius: 22px;
-            font-size: 13px;
-            font-family: $textFont;
-            font-weight: 400;
-            position: absolute;
+          .selectedOption {
+            @include rowdisplayStyle();
+            align-items: center;
+            img {
+              width: 18px;
+              height: 10.5px;
+              margin-left: -40px;
+            }
+            input {
+              width: 275px;
+              height: 40px;
+              border-radius: 24px;
+              border: none;
+              background-color: #D7DDEF;
+              font-size: 14px;
+              font-family: $textFont;
+              font-weight: 400;
+              padding-left: 10px;
+            }
+            input:focus {
+              outline: none;
+            }
           }
-        }
-        select:focus {
-          outline: none;
-        }
-        select::-webkit-scrollbar {
-          width: 6px;
-        }
-      select::-webkit-scrollbar-thumb {
-          background: #464E68; 
+          .options {
+            width: 273px;
+            height: 295px;
+            background-color: $bgColor;
+            @include coldisplayStyle();
+            align-items: flex-start;
+            border-radius: 22px;
+            padding-left: 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            margin-bottom: -15em;
+            z-index: 1;
+            .realOption {
+              background-color: transparent;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              width: 250px;
+            }
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              font-family: $textFont;
+              color: $textHeadingColor;
+              text-decoration: none;
+              margin-bottom: -3px;
+              cursor: pointer;
+            }
+          }
+          .realOption::-webkit-scrollbar {
+            width: 6px;
+            height: 25em;
+          }
+          .realOption::-webkit-scrollbar-thumb {
+            background: #464E68; 
+            border-radius: 24px;
+          }
+          .realOption::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px #BBC7E9; 
           border-radius: 24px;
+        }   
         }
-      select::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #BBC7E9; 
-        border-radius: 24px;
-      }
       }
       .formInfo2 {
         @include coldisplayStyle();
