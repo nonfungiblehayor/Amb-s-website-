@@ -806,11 +806,14 @@ body {
               overflow-x: hidden;
               width: 360px;
             }
-            option {
+            p {
               font-size: 20px;
               font-weight: 400;
               font-family: $textFont;
               color: $textHeadingColor;
+              text-decoration: none;
+              margin-bottom: -3px;
+              cursor: pointer;
             }
           }
           select:focus {
