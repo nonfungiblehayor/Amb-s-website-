@@ -9,7 +9,6 @@ function Menu({showModal, hideMenu, hideMenu2}) {
         </div>
         <div className={style.parent}>
          <nav className={style.headerDiv2}>
-            <a href='/'>Home</a>
             <a href='#services' onClick={hideMenu2}>Services</a>
             <a href='#pricing' onClick={hideMenu2}>Pricing</a>
             <a href='#about' onClick={hideMenu2}>About</a>

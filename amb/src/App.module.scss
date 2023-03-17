@@ -38,7 +38,7 @@ body {
    .headerDiv1 {
     @include rowdisplayStyle();
     align-items: center;
-    gap: 7px;
+    gap: 10px;
     img {
       width: 49.46px;
       height: 49.46px;
@@ -53,7 +53,7 @@ body {
    .headerDiv2 {
     @include rowdisplayStyle();
     align-items: center;
-    gap: 30px;
+    gap: 24px;
     a {
       color: $normalTextColor;
       font-size: 20px;
@@ -77,6 +77,9 @@ body {
       font-size: 20px;
       font-weight: 500;
     }
+    .contactBtn:focus {
+      outline: none;
+    }
    }
    .headerDiv4 {
     display: none;
@@ -88,7 +91,7 @@ body {
 .subHeaderSection {
   @include rowdisplayStyle();
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 100px;
   .subSection1 {
     @include coldisplayStyle();
@@ -114,7 +117,7 @@ body {
     }
     .quoteBtn {
       @include buttonStyle();
-      width: 281px;
+      width: 158px;
       height: $btnHeight;
       border: none;
       border-radius: 24px;
@@ -124,7 +127,6 @@ body {
     }
   }
   .subSection2 {
-    padding-top: 30px;
     img {
       width: 401px;
       height: 480px;
@@ -134,7 +136,7 @@ body {
 .serviceSection {
   @include coldisplayStyle();
   align-items: center;
-  gap: 80px;
+  gap: 100px;
   margin-top: 100px;
   h2 {
     font-family: $textFont;
@@ -152,12 +154,14 @@ body {
       img {
         width: 139px;
         height: 175px;
+        margin-bottom: 16px;
       }
       p {
         font-family: $textFont;
         font-weight: 500;
         font-size: 22px;
         color: $textHeadingColor;
+        margin-bottom: 16px;
       }
       span {
         font-family: $textFont;
@@ -175,6 +179,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  gap: 80px;
   h2 {
     font-family: $textFont;
     font-weight: 600;
@@ -183,7 +188,6 @@ body {
   }
   .pkgType {
     @include rowdisplayStyle();
-    margin-top: 80px;
     align-items: center;
     .startUpdiv {
       background-color: #CDD4E9;
@@ -192,6 +196,7 @@ body {
       @include coldisplayStyle();
       align-items: center;
       border-radius: 25px;
+      gap: 10px;
       padding: 0px 30px 24px 30px;
       .upDiv {
         background-color: #8CA0DA;
@@ -211,6 +216,7 @@ body {
         }
       }
       .priceDiv {
+        margin-bottom: -26px;
         p {
           color: $textHeadingColor;
           font-size: 24px;
@@ -227,7 +233,6 @@ body {
       .pkg {
         @include coldisplayStyle();
         max-width: 100%;
-        // align-self: flex-start;
         gap: 20px;
         h4 {
           width: 279px;
@@ -236,10 +241,11 @@ body {
           font-size: 16px;
           color: $textHeadingColor;
           line-height: 19.5px;
+          margin-bottom: 5px;
         }
         .pkgList {
           @include coldisplayStyle();
-          gap: 10px;          
+          gap: 15px;          
           .each {
             @include rowdisplayStyle();
             align-items: center;
@@ -256,6 +262,7 @@ body {
           @include coldisplayStyle();
           align-items: center;
           justify-content: center;
+          margin-top: 15px;
           .contactBtn {
             background-color: transparent;
             border: 1px solid #4D67B2;
@@ -277,18 +284,21 @@ body {
       height: 579px;
       @include coldisplayStyle();
       align-items: center;
-      border-radius: 25px;
+      border-radius: 36px;
       padding: 0px 30px 24px 30px;
+      margin-left: -30px;
+      gap: 20px;
       .upDiv {
-        background-color: #8CA0DA;
-        width: 165px;
-        height: $btnHeight;
+        background-color: #4D67B2;
+        width: 181px;
+        height: 60px;
         padding: 10px 48px 10px 48px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
         text-align: center;
         @include coldisplayStyle();
         justify-content: center;
+        margin-bottom: -10px;
         p {
           color: #FFFFFF;
           font-size: 24px;
@@ -297,6 +307,7 @@ body {
         }
       }
       .priceDiv {
+        margin-bottom: -30px;
         p {
           color: $textHeadingColor;
           font-size: 24px;
@@ -313,7 +324,7 @@ body {
       .pkg {
         @include coldisplayStyle();
         max-width: 100%;
-        gap: 20px;
+        gap: 15px;
         h4 {
           width: 302px;
           font-family: $textFont;
@@ -321,6 +332,7 @@ body {
           font-size: 16px;
           color: $textHeadingColor;
           line-height: 19.5px;
+          margin-bottom: 13px;
         }
         .pkgList {
           @include coldisplayStyle();
@@ -341,11 +353,12 @@ body {
           @include coldisplayStyle();
           align-items: center;
           justify-content: center;
+          margin-top: 15px;
           .contactBtn {
             background-color: #E4E7ED;
-            border: 1px solid #4D67B2;
+            border: none;
             border-radius: 24px;
-            width: 279px;
+            width: 302px;
             height: $btnHeight;
             padding: 1px 24px 1px 24px;
             font-family: $textFont;
@@ -364,6 +377,8 @@ body {
       align-items: center;
       border-radius: 25px;
       padding: 0px 30px 24px 30px;
+      margin-left: -20px;
+      z-index: -1;
       .upDiv {
         background-color: #8CA0DA;
         width: 165px;
@@ -382,6 +397,7 @@ body {
         }
       }
       .priceDiv {
+        margin-top: 15px;
         p {
           color: $textHeadingColor;
           font-size: 24px;
@@ -398,7 +414,6 @@ body {
       .pkg {
         @include coldisplayStyle();
         max-width: 100%;
-        // align-self: flex-start;
         gap: 23px;
         h4 {
           width: 279px;
@@ -407,10 +422,11 @@ body {
           font-size: 16px;
           color: $textHeadingColor;
           line-height: 19.5px;
+          margin-bottom: -5px;
         }
         .pkgList {
           @include coldisplayStyle();
-          gap: 10px;          
+          gap: 15px;          
           .each {
             @include rowdisplayStyle();
             align-items: center;
@@ -427,6 +443,7 @@ body {
           @include coldisplayStyle();
           align-items: center;
           justify-content: center;
+          padding-top: 10px;
           .contactBtn {
             background-color: transparent;
             border: 1px solid #4D67B2;
@@ -446,12 +463,15 @@ body {
 }
 .reqSection {
   max-width: 100%;
-  background-image: linear-gradient(#5179EE 100%, #6782CD 100%, #557DF3 100%, #5F7FDC 100%);
+  background-image: linear-gradient(90.97deg, #5179EE 9.33%, #6782CD 41.39%, #557DF3 69.37%, #5F7FDC 90.74%);
   @include rowdisplayStyle();
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 87px;
   margin-top: 100px;
+  padding-left: 118px;
+  padding-right: 118px;
+  // gap: 100px;
   p {
     font-family: $textFont;
     font-size: 24px;
@@ -460,7 +480,7 @@ body {
   }
   button {
     background-color: #E4E7ED;
-    width: 239px;
+    width: 166px;
     height: $btnHeight;
     border-radius: 24px;
     border: none;
@@ -511,6 +531,12 @@ body {
     .founderDetail {
       @include rowdisplayStyle();
       gap: 32px;
+      .imgDiv {
+        img {
+          width: 132px;
+          height: 132px;
+        }
+      }
       .founderTxt {
         @include coldisplayStyle();
         p {
@@ -533,7 +559,7 @@ body {
           p {
             width: 876px;
             font-family: $textFont;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 24.38px;
             color: $normalTextColor;
@@ -588,8 +614,11 @@ body {
         font-size: 20px;
         font-family: $textFont;
         font-weight: 400;
-        padding-left: 7px;
+        padding-left: 15px;
         margin-right: -155px;
+      }
+      input:focus {
+        outline: none;
       }
       .subBtn {
         width: 149px;
@@ -602,6 +631,9 @@ body {
         color: $bgColor;
         border: none;
       }
+      .subBtn:focus {
+        outline: none;
+      }
     }
   }
 }
@@ -609,7 +641,7 @@ body {
   @include rowdisplayStyle();
   justify-content: center;
   margin-top: $marginTop;
-  padding-bottom: 108px;
+  padding-bottom: 93px;
   .footDiv {
     background-color: #CDD4E9;
     width: 1040px;
@@ -618,14 +650,14 @@ body {
     @include rowdisplayStyle();
     align-items: center;
     justify-content: space-around;
-    padding: 60px 120px 60px 120px;
+    padding: 60px 60px 60px 60px;
     .footDiv1 {
       @include coldisplayStyle();
       width: 251.46px;
       height: 169.46px;
       background-color: #BBC7E9;
       border-radius: 36px;
-      padding: 24px;
+      padding: 20px;
       .logoDiv {
         @include rowdisplayStyle();
         align-items: center;
@@ -642,45 +674,51 @@ body {
           color: $textHeadingColor;
         }
       }   
-      p {
+      .p {
         font-family: $textFont;
           font-weight: 400;
           font-size: 16px;
           color: $normalTextColor;
+          margin-bottom: 12px;
       }   
     }
     .footDiv2 {
       @include coldisplayStyle();
-      gap: 25px;
+      gap: 24px;
+      margin-top: -35px;
       h3 {
         font-size: 20px;
         font-weight: 700;
         font-family: $textFont;
         color: $textHeadingColor;
-        margin-top: -15px;
       }
-      a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 400;
-        font-family: $textFont;
-        color: $normalTextColor;
+      .linkDiv {
+        @include coldisplayStyle();
+        gap: 24px;
+        margin-top: -15px;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: $textFont;
+          color: $normalTextColor;
+        }
       }
     }
     .footDiv3 {
       @include coldisplayStyle();
-      gap: 3px;
+      margin-top: -28px;
       h3 {
         font-size: 20px;
         font-weight: 700;
         font-family: $textFont;
         color: $textHeadingColor;
-        margin-top: -15px;
       }
       .eachLink {
         @include rowdisplayStyle();
         gap: 8px;
         align-items: center;
+        margin-bottom: 5px;
         img {
           width: 20px;
           height: 20px;
@@ -703,6 +741,8 @@ body {
         @include rowdisplayStyle();
         gap: 8px;
         align-items: center;
+        margin-top: -10px;
+        margin-bottom: -10px;
         img {
           width: 20px;
           height: 20px;

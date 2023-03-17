@@ -15,10 +15,10 @@ function Footer() {
                 AMB Consultants
                 </p>
                 </div>
-                <p>
+                <p className={style.p}>
                 Financial advisors
                 </p>
-                <p>
+                <p className={style.p}>
                 Chattered accountants
                 </p>
             </div>
@@ -26,9 +26,11 @@ function Footer() {
                 <h3>
                     Company
                 </h3>
+                <div className={style.linkDiv}>
                 <a href="/">Home</a>
                 <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
+                </div>
             </div>
            <div className={style.footDiv3}>
                 <h3>

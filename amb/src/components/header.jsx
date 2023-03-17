@@ -12,7 +12,6 @@ function Header({showModal, showMenu}) {
             </p>
         </div>
         <nav className={style.headerDiv2}>
-            <a href='/'>Home</a>
             <a href='#services'>Services</a>
             <a href='#pricing'>Pricing</a>
             <a href='#about'>About</a>
