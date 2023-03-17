@@ -1,11 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import style from '../App.module.scss';
 import arrow from '../images/Vector 58.webp';
 
 function Countries() {
     const [option, toggleOption] = useState(false);
     let [inputValue, setInputValue] = useState('');
-    const optionRef = useRef();
 
     const showOptions = () => {
         toggleOption(!option)
@@ -16,8 +15,7 @@ function Countries() {
         toggleOption(!option);
     }
     return  <div className={style.eachInfo}>
-    <label>Country</label>
-   {option ? 
+   {option ?  <> <label>Country</label>
     <div className={style.options}>
     <div className={style.realOption}>
     <p>select country</p>
@@ -181,10 +179,10 @@ function Countries() {
     <p id="Zambia" onClick={hideToggle}>Zambia</p>
     <p id="Zimbabwe" onClick={hideToggle}>Zimbabwe</p>
     </div>
-    </div> : <div className={style.selectedOption}>
-        <input id="country" name="country" placeholder='select your country' value={inputValue}></input> 
+    </div> </> : <> <label className={style.countryName}>Country</label> <div className={style.selectedOption}>
+   <input id="country" name="country" placeholder='select your country' value={inputValue}></input> 
         <img src={arrow} alt='arrow down' onClick={showOptions}></img> 
-    </div> }
+    </div> </>}
     </div>
 }
 export default Countries
