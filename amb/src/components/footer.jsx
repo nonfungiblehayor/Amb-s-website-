@@ -27,7 +27,7 @@ function Footer() {
                     Company
                 </h3>
                 <a href="/">Home</a>
-                <a href="#service">Services</a>
+                <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
             </div>
            <div className={style.footDiv3}>

@@ -880,6 +880,9 @@ body {
           padding-left: 15px;
           padding-top: 10px;
         }
+        textarea:focus {
+          outline: none;
+        }
       }
       .formInfo3 {
         @include coldisplayStyle();
@@ -895,6 +898,9 @@ body {
           font-weight: 500;
           font-family: $textFont;
           font-size: 20px;
+        }
+        button:focus {
+          outline: none;
         }
       }
     }

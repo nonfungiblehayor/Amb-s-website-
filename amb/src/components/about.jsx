@@ -4,7 +4,7 @@ import AboutAmb from "./About/aboutAmb";
 import Founder from "./About/founder";
 
 function About() {
-    return <section className={style.aboutSection}>
+    return <section className={style.aboutSection} id='about'>
         <AboutAmb />
         <Founder />
     </section>

@@ -9,7 +9,7 @@ import Group132 from '../images/Group 132.webp';
 import Group131 from '../images/Group 131.webp';
 
 function Service() {
-    return <section className={style.serviceSection}>
+    return <section className={style.serviceSection} id='services'>
         <h2>
         Your Preferred SME Accountant and Tax Advisers in Nigeria
         </h2>

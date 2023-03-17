@@ -13,9 +13,9 @@ function Header({showModal, showMenu}) {
         </div>
         <nav className={style.headerDiv2}>
             <a href='/'>Home</a>
-            <a href='/'>Services</a>
-            <a href='/'>Pricing</a>
-            <a href='/'>About</a>
+            <a href='#services'>Services</a>
+            <a href='#pricing'>Pricing</a>
+            <a href='#about'>About</a>
         </nav>
         <div className={style.headerDiv3}>
             <button className={style.contactBtn} onClick={showModal}>Contact Us</button>

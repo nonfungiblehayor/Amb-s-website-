@@ -36,10 +36,16 @@ function App() {
       toggleModal()
     }
   }
+
+  const toggleMenu2 = () => {
+    if(menu === true) {
+      menuControl(!menu)
+    }
+}
   return ( <>
     <div className={style.App}>   
       <Header showModal={toggleModal} showMenu={toggleMenu}/>   
-   {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} /> : ''}  
+   {menu ? <Menu  showModal={toggleModal} hideMenu={toggleMenu} hideMenu2={toggleMenu2} /> : ''}  
   {modal ?  <Quote hideModal={toggleModal2}/>  : ''}      
        <Subheader showModal={toggleModal}/>  
      <Service />

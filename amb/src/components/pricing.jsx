@@ -5,7 +5,7 @@ import Pro from './packages/pro';
 import Regular from './packages/regular';
 
 function Pricing({showModal}) {
-    return <section className={style.pricingSection}>
+    return <section className={style.pricingSection} id='pricing'>
         <h2>
         Our package and pricing
         </h2>
