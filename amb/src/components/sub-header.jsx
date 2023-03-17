@@ -12,7 +12,7 @@ function Subheader({showModal}) {
             Making financial statements, taxation, and 
             other technical financial matters easier to understand and manage
             </p>
-            <button className={style.quoteBtn}>
+            <button className={style.quoteBtn} onClick={showModal}>
             Contact us
             </button>
         </div>

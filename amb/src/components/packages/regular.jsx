@@ -2,7 +2,7 @@ import React from 'react';
 import style from '../../App.module.scss';
 import Frame338 from '../../images/Frame 338.svg';
 
-function Regular() {
+function Regular(props) {
     return <div className={style.regulardiv}>
          <div className={style.upDiv}>
             <p>
@@ -27,7 +27,7 @@ function Regular() {
 
         </div>
         <div className={style.contactDiv}>
-            <button className={style.contactBtn}>
+            <button className={style.contactBtn} onClick={props.fnc}>
             Contact sales
             </button>
         </div>

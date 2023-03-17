@@ -1,14 +1,14 @@
 import React from "react";
 import style from '../App.module.scss';
 
-function Request() {
+function Request({showModal}) {
     return <>
      <section className={style.reqSection}>
         <p>
         GET STARTED - Unlock the value of your numbers.
         </p>
-        <button>
-        Request A Quote
+        <button onClick={showModal}> 
+         contact us
         </button>
     </section>
     <section className={style.reqSection2}>
@@ -19,8 +19,8 @@ function Request() {
         <span>
         Unlock the value of your numbers.
         </span>
-        <button>
-        Request A Quote
+        <button onClick={showModal}>
+         contact us
         </button>
         </div>
     </section>
