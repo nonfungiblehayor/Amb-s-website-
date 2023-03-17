@@ -699,6 +699,28 @@ body {
           text-decoration: none;
         }
       }
+      .eachLink1 {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
