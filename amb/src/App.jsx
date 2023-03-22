@@ -32,6 +32,7 @@ function App() {
 
   const toggleMenu = () => {
     menuControl(!menu);
+    document.body.style.overflow = 'hidden';
     if(modal === true) {
       toggleModal()
     }
@@ -40,6 +41,7 @@ function App() {
   const toggleMenu2 = () => {
     if(menu === true) {
       menuControl(!menu)
+      document.body.style.overflowY = 'scroll';
     }
 }
   return ( <>

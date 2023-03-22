@@ -5,7 +5,7 @@ import frame423 from '../images/Frame 423.svg';
 function Menu({showModal, hideMenu, hideMenu2}) {
     return <section className={style.menuSection}>
         <div className={style.cancelDiv}>
-            <img src={frame423}alt='cancel' onClick={hideMenu}></img>
+            <img src={frame423}alt='cancel' onClick={hideMenu2}></img>
         </div>
         <div className={style.parent}>
          <nav className={style.headerDiv2}>
