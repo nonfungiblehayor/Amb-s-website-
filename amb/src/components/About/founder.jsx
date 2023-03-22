@@ -1,6 +1,5 @@
 import React from "react";
 import style from '../../App.module.scss';
-import Ellipse from '../../images/Ellipse 24.svg';
 import FounderTxt from "./founder-text";
 import FounderTxt2 from "./founder-text2";
 import FounderTxt0 from "./founder-text0";
@@ -11,9 +10,7 @@ function Founder() {
         Meet our founders
         </h3>
         <div className={style.founderDetail}>
-            <div className={style.imgDiv}>
-            <img src={Ellipse} alt='pfp'></img>
-            </div>
+
             <div className={style.founderTxt}>
                 <p className={style.ramzy}>
                 Adeniyi Abdulrahman  (AAT & ACA)
@@ -22,9 +19,6 @@ function Founder() {
             </div>
         </div>
         <div className={style.founderDetail}>
-        <div className={style.imgDiv}>
-            <img src={Ellipse} alt='pfp'></img>
-        </div>
         <div className={style.founderTxt}>
                 <p>
                 Mustapha Adeyemi (AAT & ACA)
@@ -33,9 +27,6 @@ function Founder() {
         </div>
         </div>
         <div className={style.founderDetail}>
-        <div className={style.imgDiv}>
-            <img src={Ellipse} alt='pfp'></img>
-            </div>
             <div className={style.founderTxt}>
                 <p>
                 Babatunde Femi (AAT & ACA)

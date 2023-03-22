@@ -1,12 +1,12 @@
 import React from 'react';
 import style from '../App.module.scss';
 import Subservice from './sub-service';
-import Frame135 from '../images/Frame 135.webp';
-import Group127 from '../images/Group 127.webp';
-import Group126 from '../images/Group 126.webp';
-import Frame355 from '../images/Frame 355.webp';
-import Group132 from '../images/Group 132.webp';
-import Group131 from '../images/Group 131.webp';
+import Frame135 from '../images/Group 136.svg';
+import Group127 from '../images/Group 127.svg';
+import Group126 from '../images/Group 126.svg';
+import Frame355 from '../images/Frame 355.svg';
+import Group132 from '../images/Group 132.svg';
+import Group131 from '../images/Group 131.svg';
 
 function Service() {
     return <section className={style.serviceSection} id='services'>

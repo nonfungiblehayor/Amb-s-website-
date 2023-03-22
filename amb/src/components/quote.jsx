@@ -1,7 +1,6 @@
 import React from 'react';
 import style from '../App.module.scss';
 import frame423 from '../images/Frame 423.svg';
-import Countries from './countries';
 import Quoteform from './quote-form';
 import SubmitMsg from './submit-message';
 
@@ -13,12 +12,12 @@ function Quote({hideModal}) {
         <div className={style.formDiv}>
             <form className={style.form}>
                 <div className={style.formInfo}>
-                    <Quoteform tag='Your name' type='text' holder='first name and last name' /> 
-                    <Quoteform tag='Contact email' type='email' holder='example@gmail.com' />                   
+                    <Quoteform tag='First name' type='text' holder='first name' /> 
+                    <Quoteform tag='Last name' type='text' holder='last name' />                   
                 </div>
                 <div className={style.formInfo}>
-                    <Quoteform tag='Company name' type='text' holder='example inc' />
-                    <Countries />
+                    <Quoteform tag='Email' type='email' holder='Email' />
+                    <Quoteform tag='Company name' type='text' holder='Company name' />                
                 </div>
                 <div className={style.formInfo2}>
                     <label>Your message</label>
