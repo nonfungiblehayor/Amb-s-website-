@@ -33,6 +33,140 @@ body {
   background-color: $bgColor;
 }
 
+.headerDiv4 {
+  display: none;
+ }
+
+ .footerSection {
+  @include rowdisplayStyle();
+  justify-content: center;
+  margin-top: $marginTop;
+  padding-bottom: 93px;
+  .footDiv {
+    background-color: #CDD4E9;
+    width: 907.46px;
+    height: 253.46px;
+    border-radius: 60px;
+    @include rowdisplayStyle();
+    align-items: center;
+    justify-content: space-around;
+    padding: 42px;
+    .footDiv1 {
+      @include coldisplayStyle();
+      width: 251.46px;
+      height: 169.46px;
+      background-color: #BBC7E9;
+      border-radius: 36px;
+      padding: 20px;
+      .logoDiv {
+        @include rowdisplayStyle();
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        img {
+          width: 49.46px;
+          height: 49.46px;
+        }
+        p {
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 16px;
+          color: $textHeadingColor;
+        }
+      }   
+      .p {
+        font-family: $textFont;
+          font-weight: 400;
+          font-size: 16px;
+          color: $normalTextColor;
+          margin-bottom: 12px;
+      }   
+    }
+    .footDiv2 {
+      @include coldisplayStyle();
+      gap: 24px;
+      margin-top: -35px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+      }
+      .linkDiv {
+        @include coldisplayStyle();
+        gap: 24px;
+        margin-top: -15px;
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: $textFont;
+          color: $normalTextColor;
+        }
+      }
+    }
+    .footDiv3 {
+      @include coldisplayStyle();
+      margin-top: -28px;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $textFont;
+        color: $textHeadingColor;
+      }
+      .eachLink {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 5px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+      .eachLink1 {
+        @include rowdisplayStyle();
+        gap: 8px;
+        align-items: center;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+        }
+        a {
+          font-weight: 400;
+          font-family: $textFont;
+          font-size: 16px;
+          color: $normalTextColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+
 .headerSection {
    display: flex;
    flex-direction: row;
@@ -501,75 +635,76 @@ body {
 .reqSection2 {
   display: none;
 }
-// .aboutSection {
-//   @include coldisplayStyle();
-//   padding-left: 70px;
-//   margin-top: $marginTop;
-//   .aboutDiv1 {
-//     @include coldisplayStyle();
-//     h3 {
-//       font-family: $textFont;
-//       font-weight: 600;
-//       font-size: 28px;
-//       color: $textHeadingColor;
-//     }
-//     p {
-//       width: 88vw;
-//       font-family: $textFont;
-//       font-size: 18px;
-//       font-weight: 400;
-//       color: $normalTextColor;
-//     }
-//   }
-//   .founderDiv {
-//     @include coldisplayStyle();
-//     gap: 40px;
-//     margin-top: $marginTop;
-//     h3 {
-//       font-family: $textFont;
-//       font-weight: 600;
-//       font-size: 28px;
-//       color: $textHeadingColor;
-//     }
-//     .founderDetail {
-//       @include rowdisplayStyle();
-//       .founderTxt {
-//         @include coldisplayStyle();
-//         p {
-//           width: 207px;
-//           font-family: $textFont;
-//           font-weight: 600;
-//           font-size: 20px;
-//           color: $textHeadingColor;
-//           margin-bottom: -7px;
-//         }
-//         .ramzy {
-//           width: 232px;
-//           font-family: $textFont;
-//           font-weight: 600;
-//           font-size: 20px;
-//           color: $textHeadingColor;
-//           margin-bottom: -7px;
-//         }
-//         .founderInfo {
-//           p {
-//             width: 88vw;
-//             font-family: $textFont;
-//             font-size: 18px;
-//             font-weight: 400;
-//             line-height: 24.38px;
-//             color: $normalTextColor;
-//             span {
-//               color: #1F409E;
-//               text-decoration: underline;
-//               cursor: pointer;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+.aboutSection {
+ @include coldisplayStyle();
+ align-items: center;
+ margin-top: $marginTop;
+  .aboutDiv1 {
+    @include coldisplayStyle();
+    padding-left: 100px;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 28px;
+      color: $textHeadingColor;
+    }
+    p {
+      width: 90%;
+      font-family: $textFont;
+      font-size: 18px;
+      font-weight: 400;
+      color: $normalTextColor;
+    }
+  }
+  .founderDiv {
+    @include coldisplayStyle();
+    gap: 40px;
+    margin-top: $marginTop;
+    h3 {
+      font-family: $textFont;
+      font-weight: 600;
+      font-size: 28px;
+      color: $textHeadingColor;
+    }
+    .founderDetail {
+      @include rowdisplayStyle();
+      .founderTxt {
+        @include coldisplayStyle();
+        p {
+          width: 207px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 20px;
+          color: $textHeadingColor;
+          margin-bottom: -7px;
+        }
+        .ramzy {
+          width: 232px;
+          font-family: $textFont;
+          font-weight: 600;
+          font-size: 20px;
+          color: $textHeadingColor;
+          margin-bottom: -7px;
+        }
+        .founderInfo {
+          p {
+            width: 88vw;
+            font-family: $textFont;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24.38px;
+            color: $normalTextColor;
+            span {
+              color: #1F409E;
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .newsletterSection {
   @include coldisplayStyle();
   justify-content: center;
@@ -999,6 +1134,7 @@ body {
     }
   }
 }
+}
 
 @media screen and (max-width: 1249px) and (min-width: 950px) {
   .headerSection {
@@ -1051,6 +1187,9 @@ body {
      }
     }
  }  
+ .menuSection {
+  display: none;
+}
  .subHeaderSection {
   @include rowdisplayStyle();
   justify-content: space-around;
@@ -1464,7 +1603,7 @@ body {
       color: $textHeadingColor;
     }
     p {
-      width: 80vw;
+      width: 90vw;
       font-family: $textFont;
       font-size: 20px;
       font-weight: 400;
@@ -1484,13 +1623,6 @@ body {
     .founderDetail {
       @include rowdisplayStyle();
       gap: 26px;
-      .imgDiv {
-        @include rowdisplayStyle();
-        img {
-          width: 80px;
-          height: 80px
-        }
-      }
       .founderTxt {
         @include coldisplayStyle();
         p {
@@ -1511,7 +1643,7 @@ body {
         }
         .founderInfo {
           p {
-            width: 650px;
+            width: 90vw;
             font-family: $textFont;
             font-size: 20px;
             font-weight: 400;
@@ -1690,7 +1822,7 @@ body {
   align-items: center;
   background-color: rgba(20, 31, 63, 0.5);
   z-index: 9999;
-  padding-top: -140px;
+  padding-top: 80px;
   height: 100%;
   overflow-y: scroll;
   position: fixed;
@@ -1718,7 +1850,7 @@ body {
     border-radius: 60px;
     padding: 60px;
     gap: 31px;
-    margin-bottom: 90vh;
+    margin-bottom: 40vh;
     .form {
       @include coldisplayStyle();
       align-items: center;
@@ -1950,6 +2082,9 @@ body {
      }
     }
  }
+ .menuSection {
+  display: none;
+}
  .subHeaderSection {
   @include rowdisplayStyle();
   justify-content: space-around;
