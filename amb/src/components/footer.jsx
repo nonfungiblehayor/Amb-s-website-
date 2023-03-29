@@ -11,7 +11,7 @@ AOS.init();
 
 
 function Footer() {
-    return <footer className={style.footerSection} data-aos="fade-up" data-aos-duration="500">
+    return <footer className={style.footerSection} data-aos="fade-up" data-aos-duration="1000">
         <div className={style.footDiv}>
             <div className={style.footDiv1}>
                 <div className={style.logoDiv}>

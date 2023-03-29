@@ -14,7 +14,7 @@ function Founder() {
         <h3 data-aos="fade-up" data-aos-duration="500">
         Meet our founders
         </h3>
-        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="500">
+        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="1000">
 
             <div className={style.founderTxt}>
                 <p className={style.ramzy}>
@@ -23,7 +23,7 @@ function Founder() {
                 <FounderTxt0 />
             </div>
         </div>
-        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="500">
+        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="1000">
         <div className={style.founderTxt}>
                 <p>
                 Mustapha Adeyemi (AAT & ACA)
@@ -31,7 +31,7 @@ function Founder() {
                 <FounderTxt />
         </div>
         </div>
-        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="500">
+        <div className={style.founderDetail} data-aos="fade-up" data-aos-duration="1000">
             <div className={style.founderTxt}>
                 <p>
                 Babatunde Femi (AAT & ACA)

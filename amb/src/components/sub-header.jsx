@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function Subheader({showModal}) {
-    return <section className={style.subHeaderSection} data-aos="fade-up" data-aos-duration="800">
+    return <section className={style.subHeaderSection} data-aos="fade-up" data-aos-duration="1000">
         <div className={style.subSection1}>
             <h2>
             <span>Innovative</span> financial solutions made <span>easy</span>

@@ -15,7 +15,7 @@ function Request({showModal}) {
          contact us
         </button>
     </section>
-    <section className={style.reqSection2} data-aos="fade-up" data-aos-duration="500">
+    <section className={style.reqSection2} data-aos="fade-up" data-aos-duration="1000">
         <div>
         <p>
         GET STARTED
