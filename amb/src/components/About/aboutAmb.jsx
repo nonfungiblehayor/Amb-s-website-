@@ -1,8 +1,12 @@
 import React from "react";
 import style from '../../App.module.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function AboutAmb() {
-    return <div className={style.aboutDiv1}>
+    return <div className={style.aboutDiv1} data-aos="fade-up" data-aos-duration="1000">
         <h3>
         About AMB Consultants
         </h3>           

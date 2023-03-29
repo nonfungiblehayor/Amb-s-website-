@@ -1,8 +1,12 @@
 import React from "react";
 import style from '../App.module.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function Newsletter() {
-    return <section className={style.newsletterSection}>
+    return <section className={style.newsletterSection}  data-aos="fade-up" data-aos-duration="1000">
         <div className={style.letterDiv}>
             <span>
             Don’t miss a thing

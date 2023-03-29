@@ -1,5 +1,9 @@
 import React from "react";
 import style from '../App.module.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 function Request({showModal}) {
     return <>
@@ -11,7 +15,7 @@ function Request({showModal}) {
          contact us
         </button>
     </section>
-    <section className={style.reqSection2}>
+    <section className={style.reqSection2} data-aos="fade-up" data-aos-duration="500">
         <div>
         <p>
         GET STARTED

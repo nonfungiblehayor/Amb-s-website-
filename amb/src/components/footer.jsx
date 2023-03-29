@@ -4,9 +4,14 @@ import logo from '../images/Frame 130.webp';
 import twitter from '../images/twitter.webp';
 import mail from '../images/mail.webp';
 import phone from '../images/phone.webp';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 
 function Footer() {
-    return <footer className={style.footerSection}>
+    return <footer className={style.footerSection} data-aos="fade-up" data-aos-duration="500">
         <div className={style.footDiv}>
             <div className={style.footDiv1}>
                 <div className={style.logoDiv}>
